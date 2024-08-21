@@ -16,7 +16,7 @@
 
 | **HTTP Method** | **Endpoint**                | **Description**                                 | **Request Body**                              | **Response**                                 | **Authorization**  |
 |-----------------|-----------------------------|-------------------------------------------------|----------------------------------------------|---------------------------------------------|-------------------|
-| POST            | `/api/auth/register`        | Register a new regular user.                    | JSON payload with user details.              | Registered User object.                     | `ANONYMOUS`        |
+| POST            | `/api/auth/register`        | Register a new regular user.                    | JSON payload with user details.              | JWT token in response body.                 | `ANONYMOUS`        |
 | POST            | `/api/auth/login`           | Authenticate a user and generate a JWT token.   | JSON payload with username and password.     | JWT token in response body.                 | `ANONYMOUS`        |
 
 ### Additional Notes:
